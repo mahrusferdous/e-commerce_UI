@@ -1,0 +1,66 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+}
+
+.customer-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.customer-page div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 50px;
+    width: 400px;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.customer-add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 50px;
+    width: 400px;
+    border-radius: 25px;
+    padding: 70px;
+}
+
+.customer-delete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 50px;
+    width: 400px;
+    border-radius: 25px;
+    padding: 70px;
+}
+
+.customer-update {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 50px;
+    width: 400px;
+    border-radius: 25px;
+    padding: 70px;
+}
