@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Form, InputGroup, Container, Button } from "react-bootstrap";
 import NavBar from "./NavBar";
 import axios from "axios";
@@ -9,15 +9,19 @@ function CustomerAdd() {
     const [phone, setPhone] = useState("");
 
     const addCustomer = async () => {
-        const response = await axios.post("http://127.0.0.1:5000/customers", {
-            name: name,
-            email: email,
-            phone: phone,
-        });
-        alert(response.data.message);
-        setName("");
-        setEmail("");
-        setPhone("");
+        try {
+            const response = await axios.post("http://127.0.0.1:5000/customers", {
+                name: name,
+                email: email,
+                phone: phone,
+            });
+            alert(response.data.message);
+            setName("");
+            setEmail("");
+            setPhone("");
+        } catch (error) {
+            console.error(error);
+        }
     };
 
     return (
@@ -56,7 +60,11 @@ function CustomerAdd() {
                         onChange={(e) => setPhone(e.target.value)}
                     />
                 </InputGroup>
-                <Button variant="success" onClick={addCustomer}>
+                <Button
+                    variant="success"
+                    onClick={addCustomer}
+                    disabled={name === "" || email === "" || phone === ""}
+                >
                     Add Customer
                 </Button>
             </Container>

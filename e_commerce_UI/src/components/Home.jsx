@@ -1,4 +1,3 @@
-import React from "react";
 import NavBar from "./NavBar";
 import { Image, Container } from "react-bootstrap";
 import "../App.css";

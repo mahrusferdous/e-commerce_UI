@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import NavBar from "./NavBar";
 import { Card } from "react-bootstrap";
@@ -23,8 +23,8 @@ function Customer() {
         <div>
             <NavBar />
             <div className="customer-page">
-                {customers.map((customer) => (
-                    <Card style={{ width: "18rem" }}>
+                {customers.map((customer, index) => (
+                    <Card key={index} style={{ width: "18rem" }}>
                         <Card.Img variant="top" src={picture} />
                         <Card.Body>
                             <Card.Title>{customer.name}</Card.Title>
