@@ -12,3 +12,12 @@ This is a e-commerce UI project that I have created using ReactJS. This project 
 -   The customer add page has a form that allows the user to add a new customer to the list
 -   The customer edit page allows the user to edit the customer details
 -   The customer delete page allows the user to delete the customer from the list
+
+## Product Catalog Page
+
+## Installation
+
+1. Clone the repository
+2. Run `npm install` to install the dependencies for the UI
+3. Run `npm start` to start the UI
+4. Run the API server by flask run command
