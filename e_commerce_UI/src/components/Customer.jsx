@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import NavBar from "./NavBar";
+import { Card } from "react-bootstrap";
+import picture from "../assets/people.svg";
 
 function Customer() {
     const [customers, setCustomers] = useState([]);
@@ -22,12 +24,17 @@ function Customer() {
             <NavBar />
             <div className="customer-page">
                 {customers.map((customer) => (
-                    <div key={customer.customer_id}>
-                        <h3>{customer.name}</h3>
-                        <p>{customer.customer_id}</p>
-                        <p>{customer.phone}</p>
-                        <p>{customer.email}</p>
-                    </div>
+                    <Card style={{ width: "18rem" }}>
+                        <Card.Img variant="top" src={picture} />
+                        <Card.Body>
+                            <Card.Title>{customer.name}</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                {customer.customer_id}
+                            </Card.Subtitle>
+                            <Card.Text>Phone: {customer.phone}</Card.Text>
+                            <Card.Text>Email: {customer.email}</Card.Text>
+                        </Card.Body>
+                    </Card>
                 ))}
             </div>
         </div>

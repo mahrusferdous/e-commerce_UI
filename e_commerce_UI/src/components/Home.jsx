@@ -1,16 +1,21 @@
 import React from "react";
 import NavBar from "./NavBar";
-import { Container } from "react-bootstrap";
+import { Image, Container } from "react-bootstrap";
 import "../App.css";
+import picture from "../assets/e-commerce.svg";
 
 function Home() {
     return (
         <div>
             <NavBar />
-            <Container className="home-page">
-                <h1>Welcome to the Home page</h1>
-                <p>Here you can find all the products you need</p>
-            </Container>
+            <div className="home">
+                <Image src={picture} alt="E-commerce" fluid />
+                <Container className="home-page">
+                    <h1 style={{ fontSize: "100px" }}>Welcome!</h1>
+                    <h2 style={{ fontSize: "50px" }}>To E-commerce Site</h2>
+                    <h3>Here you can find all the products you need</h3>
+                </Container>
+            </div>
         </div>
     );
 }
