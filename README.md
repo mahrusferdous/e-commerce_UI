@@ -21,3 +21,9 @@ This is a e-commerce UI project that I have created using ReactJS. This project 
 2. Run `npm install` to install the dependencies for the UI
 3. Run `npm start` to start the UI
 4. Run the API server by flask run command
+
+## NOTE
+
+-   Issues with Products API
+-   Unable to add products to the cart
+-   Unable to view the cart items
