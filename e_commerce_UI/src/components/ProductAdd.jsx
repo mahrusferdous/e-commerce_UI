@@ -64,7 +64,7 @@ function ProductAdd() {
                     />
                 </InputGroup>
 
-                <Button onClick={addProduct} variant="success">
+                <Button onClick={addProduct} variant="success" disabled={!date || !customer_id}>
                     Add Product
                 </Button>
             </Container>

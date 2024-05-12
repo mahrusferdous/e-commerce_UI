@@ -69,7 +69,11 @@ function ProductUpdate() {
                     />
                 </InputGroup>
 
-                <Button variant="primary" onClick={updateProduct}>
+                <Button
+                    variant="primary"
+                    onClick={updateProduct}
+                    disabled={!updateProd || !date || !customer_id}
+                >
                     Update Product
                 </Button>
             </Container>

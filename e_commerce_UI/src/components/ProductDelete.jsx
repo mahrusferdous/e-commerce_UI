@@ -30,7 +30,7 @@ function ProductDelete() {
                         onChange={(e) => setDeleteProd(e.target.value)}
                     />
                 </InputGroup>
-                <Button variant="danger" onClick={deleteProduct} disabled={deleteProd === ""}>
+                <Button variant="danger" onClick={deleteProduct} disabled={!deleteProd}>
                     Delete Product
                 </Button>
             </Container>
