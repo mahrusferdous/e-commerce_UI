@@ -21,6 +21,13 @@ function NavBar() {
                                 Update Customer
                             </NavDropdown.Item>
                         </NavDropdown>
+                        <NavDropdown title="Product Dropdown" id="navbarScrollingDropdown">
+                            <NavDropdown.Item href="/order">Product</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="/order/add">Add Product</NavDropdown.Item>
+                            <NavDropdown.Item href="/order/delete">Delete Product</NavDropdown.Item>
+                            <NavDropdown.Item href="/order/update">Update Product</NavDropdown.Item>
+                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

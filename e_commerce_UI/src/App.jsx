@@ -5,6 +5,10 @@ import Customer from "./components/Customer";
 import CustomerAdd from "./components/CustomerAdd";
 import CustomerDelete from "./components/CustomerDelete";
 import CustomerUpdate from "./components/CustomerUpdate";
+import Product from "./components/Product";
+import ProductAdd from "./components/ProductAdd";
+import ProductDelete from "./components/ProductDelete";
+import ProductUpdate from "./components/ProductUpdate";
 
 function App() {
     return (
@@ -14,6 +18,10 @@ function App() {
             <Route path="/customer/add" element={<CustomerAdd />} />
             <Route path="/customer/delete" element={<CustomerDelete />} />
             <Route path="/customer/update" element={<CustomerUpdate />} />
+            <Route path="/order" element={<Product />} />
+            <Route path="/order/add" element={<ProductAdd />} />
+            <Route path="/order/delete" element={<ProductDelete />} />
+            <Route path="/order/update" element={<ProductUpdate />} />
         </Routes>
     );
 }
